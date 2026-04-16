@@ -11,10 +11,17 @@ $(document).ready(function() {
   });
 
 
-  jQuery('.nav > li > a').click(function(e){
-		e.preventDefault();
-		jQuery.scrollTo(jQuery(this).attr('href'), 400, { offset:-(jQuery('#top').height()), axis:'y' });
-	});
+jQuery('.nav > li > a').click(function(e){
+    var target = jQuery(this).attr('href');
+
+    // sirf # wale links pe scroll
+    if(target.startsWith("#")){
+        e.preventDefault();
+        jQuery.scrollTo(target, 400, { 
+            offset:-(jQuery('#top').height()), axis:'y' 
+        });
+    }
+});
 
 
 /**
