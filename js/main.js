@@ -1,4 +1,14 @@
 $(document).ready(function() {
+	// CAMERA CLICK EFFECT
+$('#cameraBtn').on('click', function(e) {
+    e.preventDefault();
+
+    $('.camera-icon').addClass('zoom-effect');
+
+    setTimeout(function(){
+        window.location.href = 'portfolio.html';
+    }, 800);
+});
  
   $("#owl-example").owlCarousel({
 	items : 5, //10 items above 1000px browser width
