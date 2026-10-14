@@ -397,3 +397,16 @@ Responsive styles
   transition: all 0.8s ease;
   opacity: 0;
 }
+
+.content-block-cyan h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.content-block-cyan p {
+    font-size: 17px;
+    line-height: 1.7;
+}
